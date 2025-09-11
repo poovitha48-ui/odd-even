@@ -1,0 +1,15 @@
+public class oddeven{
+    public static void main(String[]args){
+        int val=33;
+        if(val%2==0)
+        System.out.print("even");
+        else
+         System.out.print("odd");
+    }
+}
+
+
+
+OUTPUT:
+
+    odd
