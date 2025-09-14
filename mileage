@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class MileageRemunerationCalculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the distance traveled (in kilometers): ");
+        double distance = scanner.nextDouble();
+        System.out.print("Enter the rate per kilometer (e.g., 5.5): ");
+        double ratePerKm = scanner.nextDouble();
+        double remuneration = distance * ratePerKm;
+        System.out.println("Total mileage remuneration: ₹" + String.format("%.2f", remuneration));
+
+        scanner.close();
+    }
+}
+
+
+
+OUTPUT:
+
+Enter the distance traveled (in kilometers): 120.5
+Enter the rate per kilometer (e.g., 5.5): 6.0
+Total mileage remuneration: ₹723.00
